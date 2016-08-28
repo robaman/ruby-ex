@@ -11,7 +11,7 @@ end
 map '/robert' do
   robert = proc do |env|
     hostname = Socket.gethostname
-    [200, {"Content-Type" => "text/plain"}, ["robert from #{hostname}"]]
+    [200, {"Content-Type" => "text/plain"}, ["roberto from #{hostname}"]]
   end
   
   run robert
