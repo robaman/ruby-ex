@@ -7,6 +7,10 @@ map '/health' do
   run health
 end
 
+map '/robert' do
+  [200, {"Content-Type" => "text/plain"}, ["robert"]]
+end
+
 map '/lobster' do
   run Rack::Lobster.new
 end
