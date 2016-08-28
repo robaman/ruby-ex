@@ -8,7 +8,11 @@ map '/health' do
 end
 
 map '/robert' do
-  [200, {"Content-Type" => "text/plain"}, ["robert"]]
+  robert = proc do |env|
+    [200, {"Content-Type" => "text/plain"}, ["robert"]]
+  end
+  
+  run robert
 end
 
 map '/lobster' do
