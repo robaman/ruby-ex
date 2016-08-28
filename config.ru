@@ -9,7 +9,7 @@ end
 
 map '/robert' do
   robert = proc do |env|
-    [200, {"Content-Type" => "text/plain"}, ["robert"]]
+    [200, {"Content-Type" => "text/plain"}, ["robert2"]]
   end
   
   run robert
